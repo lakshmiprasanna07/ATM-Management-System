@@ -35,4 +35,3 @@ This ATM Management System is licensed under the MIT License.
 ### Contact
 If you have any questions or need assistance, you can reach out to the project maintainer:  
 PANDETI LAKSHMI PRASANNA  
-lakshmiprasanna.lp07@gmail.com
