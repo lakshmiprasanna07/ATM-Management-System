@@ -4,6 +4,7 @@ import sqlite3
 from tkinter import messagebox
 conn=sqlite3.connect("test.db")
 
+#create the table
 conn.execute("""CREATE TABLE IF NOT EXISTS DATA
            (id INT PRIMARY KEY NOT NULL,
            cardnumber TEXT NOT NULL,
@@ -11,18 +12,21 @@ conn.execute("""CREATE TABLE IF NOT EXISTS DATA
           balance REAL);""")
 
 def login():
+#create data for database
 #conn.execute("INSERT INTO DATA (id,cardnumber,pin,balance) \
    # VALUES (1,"64445298794","2004",78000.0)");
 #conn.execute("INSERT INTO DATA (id,cardnumber,pin,balance) \
       #VALUES (2,"64445298795","2005",88000.0)");
     #conn.execute("INSERT INTO DATA (id,cardnumber,pin,balance) \
         #VALUES (4,'64445298745','2002',89000.0)");
- 
+
+#checks whether account number and pin are matched or not
     cursor=conn.execute('SELECT cardnumber,pin FROM DATA where cardnumber=? AND pin=?',(e.get(),e1.get()) )            
     row=cursor.fetchone()
     if row:
         options()
     else:
+               # if account number and entered pin are not matched then the transaction would be failed
         messagebox.showinfo("info","Transaction failed")
         exit
     cursor=conn.execute('SELECT balance FROM DATA where cardnumber=? AND pin=?',(e.get(),e1.get()))
