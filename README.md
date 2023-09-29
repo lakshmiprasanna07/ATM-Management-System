@@ -5,7 +5,7 @@ This application is an ATM management system which performs the operations such 
 The ATM Management System is a Python application designed to simulate the operations of an Automated Teller Machine (ATM). This system allows users to perform various banking transactions including withdrawing funds, depositing funds, checking account balances, and transferring the money. The system uses the SQLite database to store and manage user account information securely.
 
 ### Features
-1.User Registration: New users can be added into the database by including their details into it like account number, pin, initial deposit.
+1.User Registration: New users can be added into the database by including their details into it like account number, pin, initial deposit.  
 2.Login: Registered users can log in to their accounts using their account number and PIN.
 3.Account Balance Enquiry: Users can check their account balances to view their available funds.
 4.Cash Withdrawal: Users can withdraw cash from their accounts by specifying the desired amount. The system will dispense cash if the account has sufficient funds.
