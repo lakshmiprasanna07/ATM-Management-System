@@ -14,17 +14,17 @@ The ATM Management System is a Python application designed to simulate the opera
 **7.Logout:** Users can securely log out of their accounts to prevent unauthorized access by clicking quit button.  
 
 ### Technologies Used
-**- Python:** The core programming language used to develop the ATM system.
-**- SQLite3:** The database management system used to store and retrieve user account information.
+- Python: The core programming language used to develop the ATM system.  
+- SQLite3: The database management system used to store and retrieve user account information.
 
 ### Usage
 To use the atm management system after adding details to the database login to perform acyions by using account number and respective pin. Next, you will find options which are deposit, cash withdrawl, transfer, balance enquiry. To deposit the money to any account use deposit. To withdrawl the cash, use cash withdrawl. To transfer the money to any account from your account, use transfer. To check the available balance, use balance enquiry.
 
 ### Database Schema
 ###### Data table:
-**- account_number:** The unique account number for each user.
-**- pin:** The encrypted PIN of the user.
-**- balance:** The current account balance.
+- account_number: The unique account number for each user.
+- pin: The encrypted PIN of the user.
+- balance: The current account balance.
 
 ### Contributions
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or create a pull request on the project's GitHub repository.
